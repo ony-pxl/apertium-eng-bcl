@@ -1,0 +1,10 @@
+{
+    "eng-bcl": {
+        "input": "eng-bcl-input.txt",
+        "mode": "eng-bcl"
+    },
+    "bcl-eng": {
+        "input": "bcl-eng-input.txt",
+        "mode": "bcl-eng"
+    }
+}
