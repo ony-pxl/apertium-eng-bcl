@@ -7,11 +7,34 @@
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
+    <def-cat n="v">
+      <cat-item tags="v"/>
+      <cat-item tags="v.*"/>
+    </def-cat>
+    <def-cat n="prn">
+      <cat-item tags="prn"/>
+      <cat-item tags="prn.*"/>
+    </def-cat>
+    <def-cat n="be">
+      <cat-item tags="be.*"/>
+    </def-cat>
+    <def-cat n="pl">
+      <cat-item tags="n.pl"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
+    </def-attr>
+    <def-attr n="a_v">
+      <attr-item tags="v"/>
+    </def-attr>
+    <def-attr n="a_prn">
+      <attr-item tags="prn"/>
+    </def-attr>
+    <def-attr n="a_n">
+      <attr-item tags="n"/>
     </def-attr>
   </section-def-attrs>
 
@@ -46,6 +69,113 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: PRN V -> V PRN">
+      <pattern>
+        <pattern-item n="prn"/>
+        <pattern-item n="v"/>
+      </pattern>
+      
+      <action>
+        <out>
+          <chunk name="swap_subj_verb">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: PRN be V -> V PRN">
+      <pattern>
+        <pattern-item n="prn"/>
+        <pattern-item n="be"/>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="be_remove">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+              <tag><lit-tag v="prog"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b/>
+            <chunk name="prn_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: Plurals">
+      <pattern>
+        <pattern-item n="pl"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="plural">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <lit v="mga"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_n"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <!-- <rule>
+      <pattern>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_v"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule>
+      <pattern>
+        <pattern-item n="prn"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="lem"/>
+            <clip pos="1" side="tl" part="a_prn"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    -->
+    
   </section-rules>
 </transfer>
 
@@ -57,4 +187,3 @@ Resources:
     https://wiki.apertium.org/wiki/A_long_introduction_to_transfer_rules
     https://wiki.apertium.org/wiki/Transfer#Adding_structural_transfer_.28grammar.29_rules
 -->
-

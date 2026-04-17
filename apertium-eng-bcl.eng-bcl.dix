@@ -20,6 +20,7 @@
     <sdef n="ij"              c="Interjection"/>
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
+    <sdef n="v"             c="Verb"/>
 
     <sdef n="attr"            c="Attributive"/>
     <sdef n="top"             c="Toponym"/>
@@ -71,6 +72,9 @@
     <sdef n="pprs"            c="Present participle"/>
     <sdef n="pasv"            c="Passive"/>
     <sdef n="actv"            c="Active voice"/>
+    <sdef n="past"             c="Past"/>
+
+    <sdef n="be"             c="Be Verb"/>
 
     <sdef n="sint"            c="Synthetic (of adjectives)"/>
     <sdef n="pst"             c="Positive"/>
@@ -100,6 +104,15 @@
       <!-- example:
            <e><p><l>house<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
       -->
+
+      <e><p><l>fish<s n="n"/></l><r>sira<s n="n"/></r></p></e>
+      <e><p><l>rock<s n="n"/></l><r>gapo<s n="n"/></r></p></e>
+      <e><p><l>house<s n="n"/></l><r>harong<s n="n"/></r></p></e>
+      <e><p><l>walk<s n="v"/></l><r>lakaw<s n="v"/></r></p></e>
+      <e><p><l>I<s n="prn"/></l><r>ako<s n="prn"/></r></p></e>
+      <e><p><l>eat<s n="v"/></l><r>kaon<s n="v"/></r></p></e>
+      <e><p><l>be<s n="be"/></l><r><s n="be"/></r></p></e>
+      <e><p><l>run<s n="v"/></l><r>dalagan<s n="v"/></r></p></e>
 
       <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
       <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>

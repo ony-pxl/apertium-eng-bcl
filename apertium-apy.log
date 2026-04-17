@@ -1,0 +1,113 @@
+WARNING:root:Have fasttext lib, but started without --fasttext-model, not using fastText for language identification
+INFO:root:2 pair modes found
+INFO:root:4 analyzer modes found
+INFO:root:2 generator modes found
+INFO:root:2 tagger modes found
+INFO:root:0 spell modes found
+INFO:root:0 tokenise modes found
+INFO:root:0 guesser modes found
+INFO:root:0 bilsearch modes found
+INFO:root:0 billookup modes found
+INFO:root:0 embeddings modes found
+INFO:root:Serving on all interfaces/families, e.g. http://localhost:2737
+INFO:apertium_apy.systemd:No notification socket, not launched via systemd?
+WARNING:root:Caught signal: 2
+WARNING:root:Have fasttext lib, but started without --fasttext-model, not using fastText for language identification
+INFO:root:2 pair modes found
+INFO:root:4 analyzer modes found
+INFO:root:2 generator modes found
+INFO:root:2 tagger modes found
+INFO:root:0 spell modes found
+INFO:root:0 tokenise modes found
+INFO:root:0 guesser modes found
+INFO:root:0 bilsearch modes found
+INFO:root:0 billookup modes found
+INFO:root:0 embeddings modes found
+INFO:root:Serving on all interfaces/families, e.g. http://localhost:2737
+INFO:apertium_apy.systemd:No notification socket, not launched via systemd?
+WARNING:root:Caught signal: 2
+WARNING:root:Have fasttext lib, but started without --fasttext-model, not using fastText for language identification
+INFO:root:2 pair modes found
+INFO:root:4 analyzer modes found
+INFO:root:2 generator modes found
+INFO:root:2 tagger modes found
+INFO:root:0 spell modes found
+INFO:root:0 tokenise modes found
+INFO:root:0 guesser modes found
+INFO:root:0 bilsearch modes found
+INFO:root:0 billookup modes found
+INFO:root:0 embeddings modes found
+INFO:root:Serving on all interfaces/families, e.g. http://localhost:2737
+INFO:apertium_apy.systemd:No notification socket, not launched via systemd?
+INFO:tornado.access:200 GET /listPairs (::1) 1.96ms
+INFO:root:eng-bcl not in pipelines of this process
+INFO:root:Starting up a new pipeline for eng-bcl …
+INFO:tornado.access:200 GET /translate?q=walk&langpair=eng|bcl (::1) 48.86ms
+WARNING:root:Caught signal: 2
+WARNING:root:Have fasttext lib, but started without --fasttext-model, not using fastText for language identification
+INFO:root:2 pair modes found
+INFO:root:4 analyzer modes found
+INFO:root:2 generator modes found
+INFO:root:2 tagger modes found
+INFO:root:0 spell modes found
+INFO:root:0 tokenise modes found
+INFO:root:0 guesser modes found
+INFO:root:0 bilsearch modes found
+INFO:root:0 billookup modes found
+INFO:root:0 embeddings modes found
+INFO:root:Serving on all interfaces/families, e.g. http://localhost:2737
+Traceback (most recent call last):
+  File "/usr/bin/apertium-apy", line 33, in <module>
+    sys.exit(load_entry_point('apertium-apy==0.13.0', 'console_scripts', 'apertium-apy')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apertium_apy/apy.py", line 393, in main
+    http_server.bind(args.port)
+  File "/usr/local/lib/python3.12/dist-packages/tornado/tcpserver.py", line 204, in bind
+    sockets = bind_sockets(
+              ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+WARNING:root:Have fasttext lib, but started without --fasttext-model, not using fastText for language identification
+INFO:root:2 pair modes found
+INFO:root:4 analyzer modes found
+INFO:root:2 generator modes found
+INFO:root:2 tagger modes found
+INFO:root:0 spell modes found
+INFO:root:0 tokenise modes found
+INFO:root:0 guesser modes found
+INFO:root:0 bilsearch modes found
+INFO:root:0 billookup modes found
+INFO:root:0 embeddings modes found
+INFO:root:Serving on all interfaces/families, e.g. http://localhost:2737
+Traceback (most recent call last):
+  File "/usr/bin/apertium-apy", line 33, in <module>
+    sys.exit(load_entry_point('apertium-apy==0.13.0', 'console_scripts', 'apertium-apy')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/apertium_apy/apy.py", line 393, in main
+    http_server.bind(args.port)
+  File "/usr/local/lib/python3.12/dist-packages/tornado/tcpserver.py", line 204, in bind
+    sockets = bind_sockets(
+              ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/tornado/netutil.py", line 174, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+WARNING:root:Have fasttext lib, but started without --fasttext-model, not using fastText for language identification
+INFO:root:2 pair modes found
+INFO:root:4 analyzer modes found
+INFO:root:2 generator modes found
+INFO:root:2 tagger modes found
+INFO:root:0 spell modes found
+INFO:root:0 tokenise modes found
+INFO:root:0 guesser modes found
+INFO:root:0 bilsearch modes found
+INFO:root:0 billookup modes found
+INFO:root:0 embeddings modes found
+INFO:root:Serving on all interfaces/families, e.g. http://localhost:2737
+INFO:apertium_apy.systemd:No notification socket, not launched via systemd?
+INFO:root:eng-bcl not in pipelines of this process
+INFO:root:Starting up a new pipeline for eng-bcl …
+INFO:tornado.access:200 GET /translate?q=walk%20to%20the%20market&langpair=eng|bcl (::1) 72.74ms
+INFO:tornado.access:200 GET /translate?q=walked&langpair=eng|bcl (::1) 10.97ms
+INFO:tornado.access:200 GET /translate?q=I%20walked&langpair=eng|bcl (::1) 11.06ms
+INFO:tornado.access:200 GET /translate?q=I%20ate%20fish&langpair=eng|bcl (::1) 57.45ms
