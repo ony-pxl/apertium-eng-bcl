@@ -18,6 +18,10 @@
     <def-cat n="be">
       <cat-item tags="be.*"/>
     </def-cat>
+    <def-cat n="will">
+      <cat-item tags="will"/>
+      <cat-item tags="will.*"/>
+    </def-cat>
     <def-cat n="pl">
       <cat-item tags="n.pl"/>
     </def-cat>
@@ -35,6 +39,12 @@
     </def-attr>
     <def-attr n="a_n">
       <attr-item tags="n"/>
+    </def-attr>
+    <def-attr n="a_vaux">
+      <attr-item tags="vaux"/>
+    </def-attr>
+    <def-attr n="a_future">
+      <attr-item tags="future"/>
     </def-attr>
   </section-def-attrs>
 
@@ -68,6 +78,38 @@
           </chunk>
         </out>
       </action>
+    </rule>
+
+    <rule comment="REGLA: PRN will V -> V">
+        <pattern>
+            <pattern-item n="prn"/>
+            <pattern-item n="will"/>
+            <pattern-item n="v"/>
+        </pattern>
+
+        <action>
+            <out>
+                <chunk name="will_remove">
+                    <tags>
+                        <tag><lit-tag v="v"/></tag>
+                    </tags>
+                    <lu>
+                        <clip pos="3" side="tl" part="lem"/>
+                        <lit-tag v="v"/>
+                        <lit-tag v="future"/>
+                    </lu>
+                    </chunk>
+                    <b/>
+                    <chunk name="prn_swap">
+                    <tags>
+                      <tag><lit-tag v="prn"/></tag>
+                    </tags>
+                    <lu>
+                      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                    </chunk>
+            </out>
+        </action>
     </rule>
 
     <rule comment="REGLA: PRN V -> V PRN">
@@ -105,7 +147,6 @@
           <chunk name="be_remove">
             <tags>
               <tag><lit-tag v="v"/></tag>
-              <tag><lit-tag v="prog"/></tag>
             </tags>
             <lu>
               <clip pos="3" side="tl" part="whole"/>

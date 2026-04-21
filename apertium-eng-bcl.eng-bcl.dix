@@ -75,6 +75,7 @@
     <sdef n="past"             c="Past"/>
 
     <sdef n="be"             c="Be Verb"/>
+    <sdef n="will"             c="Will Vaux"/>
 
     <sdef n="sint"            c="Synthetic (of adjectives)"/>
     <sdef n="pst"             c="Positive"/>
@@ -114,6 +115,7 @@
       <e><p><l>you<s n="prn"/></l><r>ika<s n="prn"/></r></p></e>
       <e><p><l>eat<s n="v"/></l><r>kaon<s n="v"/></r></p></e>
       <e><p><l>be<s n="be"/></l><r><s n="be"/></r></p></e>
+      <e><p><l>will<s n="will"/></l><r><s n="will"/></r></p></e>
       <e><p><l>run<s n="v"/></l><r>dalagan<s n="v"/></r></p></e>
 
       <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
