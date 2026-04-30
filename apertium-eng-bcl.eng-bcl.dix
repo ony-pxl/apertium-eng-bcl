@@ -107,11 +107,17 @@
       -->
 
       <e><p><l>a<s n="det"/></l><r><s n="det"/></r></p></e>
+      <e><p><l>and<s n="cnjcoo"/></l><r>buda<s n="cnjcoo"/></r></p></e>
       <e><p><l>be<s n="be"/></l><r><s n="be"/></r></p></e>
+      <e><p><l>by<s n="pr"/></l><r><s n="be"/></r></p></e>
+      <e><p><l>bed<s n="n"/></l><r>higdaan<s n="n"/></r></p></e>
       <e><p><l>cat<s n="n"/></l><r>ikos<s n="n"/></r></p></e>
+      <e><p><l>chair<s n="n"/></l><r>tukawan<s n="n"/></r></p></e>
       <e><p><l>chicken<s n="n"/></l><r>manok<s n="n"/></r></p></e>
       <e><p><l>cow<s n="n"/></l><r>baka<s n="n"/></r></p></e>
       <e><p><l>dog<s n="n"/></l><r>ayam<s n="n"/></r></p></e>
+      <e><p><l>door<s n="n"/></l><r>pinto<s n="n"/></r></p></e>
+      <e><p><l>drink<s n="v"/></l><r>inom<s n="v"/></r></p></e>
       <e><p><l>duck<s n="n"/></l><r>pato<s n="n"/></r></p></e>
       <e><p><l>couch<s n="n"/></l><r>sala<s n="n"/></r></p></e>
       <e><p><l>eat<s n="v"/></l><r>kaon<s n="v"/></r></p></e>      
@@ -119,14 +125,21 @@
       <e><p><l>horse<s n="n"/></l><r>kabayo<s n="n"/></r></p></e>
       <e><p><l>house<s n="n"/></l><r>harong<s n="n"/></r></p></e>
       <e><p><l>I<s n="prn"/></l><r>ako<s n="prn"/></r></p></e>
+      <e><p><l>listen<s n="v"/></l><r>dangog<s n="v"/></r></p></e>
+      <e><p><l>near<s n="pr"/></l><r>harani<s n="pr"/></r></p></e>
       <e><p><l>on<s n="pr"/></l><r><s n="pr"/></r></p></e>
       <e><p><l>pig<s n="n"/></l><r>orig<s n="n"/></r></p></e>
       <e><p><l>rock<s n="n"/></l><r>gapo<s n="n"/></r></p></e>
       <e><p><l>run<s n="v"/></l><r>dalagan<s n="v"/></r></p></e>
+      <e><p><l>sit<s n="v"/></l><r>tukaw<s n="v"/></r></p></e>
       <e><p><l>sleep<s n="v"/></l><r>katurog<s n="v"/></r></p></e>
+      <e><p><l>table<s n="n"/></l><r>lamesa<s n="n"/></r></p></e>
+      <e><p><l>to<s n="pr"/></l><r><s n="pr"/></r></p></e>
       <e><p><l>walk<s n="v"/></l><r>lakaw<s n="v"/></r></p></e>
       <e><p><l>water<s n="n"/></l><r>tubig<s n="n"/></r></p></e>
       <e><p><l>will<s n="will"/></l><r><s n="will"/></r></p></e>
+      <e><p><l>window<s n="n"/></l><r>bintana<s n="n"/></r></p></e>
+      <e><p><l>write<s n="v"/></l><r>surat<s n="v"/></r></p></e>
       <e><p><l>you<s n="prn"/></l><r>ika<s n="prn"/></r></p></e>
 
       <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>

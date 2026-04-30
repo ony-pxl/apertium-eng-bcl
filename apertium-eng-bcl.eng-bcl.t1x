@@ -30,12 +30,24 @@
     <def-cat n="ind">
       <cat-item tags="det.ind"/>
     </def-cat>
+    <def-cat n="pres">
+      <cat-item tags="v.pres"/>
+    </def-cat>
     <def-cat n="pl">
       <cat-item tags="n.pl"/>
       <cat-item tags="be.v.pl"/>
     </def-cat>
     <def-cat n="on">
       <cat-item lemma="on" tags ="pr"/>
+    </def-cat>
+    <def-cat n="by">
+      <cat-item lemma="by" tags ="pr"/>
+    </def-cat>
+    <def-cat n="to">
+      <cat-item lemma="to" tags ="pr"/>
+    </def-cat>
+    <def-cat n="near">
+      <cat-item lemma="near" tags ="pr"/>
     </def-cat>
   </section-def-cats>
 
@@ -197,7 +209,7 @@
               <tag><lit-tag v="v"/></tag>
             </tags>
             <lu>
-              <clip pos="4" side="tl" part="whole"/>
+              <clip pos="3" side="tl" part="whole"/>
             </lu>
             </chunk>
             <b/>
@@ -311,11 +323,11 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N V -> V an N">
+    <rule comment="REGLA: DET N V.pres -> V.pres an N">
       <pattern>
         <pattern-item n="det"/>
         <pattern-item n="n"/>
-        <pattern-item n="v"/>
+        <pattern-item n="pres"/>
       </pattern>
       <action>
         <out>
@@ -324,7 +336,9 @@
               <tag><lit-tag v="v"/></tag>
             </tags>
             <lu>
-              <clip pos="3" side="tl" part="whole"/>
+              <clip pos="3" side="tl" part="lem"/>
+              <lit-tag v="v"/>
+              <lit-tag v="pres"/>
             </lu>
             </chunk>
             <b/>
@@ -429,6 +443,104 @@
             <tags>
               <tag><lit-tag v="n"/></tag>
             </tags>
+            <lu>
+              <lit v="sa"/>
+              <lit-tag v="pr"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: by DET N -> sa may N">
+      <pattern>
+        <pattern-item n="by"/>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="sa_n_form">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <lit v="sa"/>
+              <lit-tag v="pr"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="may"/>
+              <lit-tag v="pr"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: by DET N -> sa may N">
+      <pattern>
+        <pattern-item n="to"/>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="to_pa_duman">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="pa"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="duman"/>
+              <lit-tag v="pr"/>
+            </lu>
+          </chunk>
+          <b/>
+          <chunk name="sa_n_form">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <lit v="sa"/>
+              <lit-tag v="pr"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: near DET N -> harani sa N">
+      <pattern>
+        <pattern-item n="near"/>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="sa_n_form">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
             <lu>
               <lit v="sa"/>
               <lit-tag v="pr"/>
