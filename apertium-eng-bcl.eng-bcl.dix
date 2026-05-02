@@ -131,7 +131,9 @@
       <e><p><l>pig<s n="n"/></l><r>orig<s n="n"/></r></p></e>
       <e><p><l>rock<s n="n"/></l><r>gapo<s n="n"/></r></p></e>
       <e><p><l>run<s n="v"/></l><r>dalagan<s n="v"/></r></p></e>
-      <e><p><l>sing<s n="v"/></l><r>kanta<s n="v"/></r></p></e>
+      <e><p><l>sing<s n="v"/></l><r>kanta<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>sing<s n="v"/><s n="pres"/><s n="p3"/><s n="sg"/></l><r>kanta<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>sing<s n="v"/><s n="past"/></l><r>kanta<s n="v"/><s n="past"/></r></p></e>
       <e><p><l>sit<s n="v"/></l><r>tukaw<s n="v"/></r></p></e>
       <e><p><l>sleep<s n="v"/></l><r>katurog<s n="v"/></r></p></e>
       <e><p><l>table<s n="n"/></l><r>lamesa<s n="n"/></r></p></e>
@@ -161,7 +163,7 @@
       <e><p><l>woman<s n="n"/></l><r>babayi<s n="n"/></r></p></e>
       <e><p><l>boy<s n="n"/></l><r>lalaki<s n="n"/></r></p></e>
       <e><p><l>girl<s n="n"/></l><r>babayi<s n="n"/></r></p></e>
-      <e><p><l>love<s n="v"/></l><r>padangat<s n="v"/></r></p></e>
+      <e><p><l>love<s n="v"/></l><r>padaba<s n="v"/></r></p></e>
       <e><p><l>angry<s n="n"/></l><r>dagit<s n="n"/></r></p></e>
       <e><p><l>big<s n="n"/></l><r>dakula<s n="n"/></r></p></e>
       <e><p><l>small<s n="n"/></l><r>sadit<s n="n"/></r></p></e>
