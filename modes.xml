@@ -38,8 +38,8 @@
         <file name="eng-bcl.t3x.bin"/>
       </program>
 
-      <program name="python3 /home/asus/new-eng-bcl/hfst-gen.py">
-        <file name="eng-bcl.autogen.hfst"/>
+      <program name="lt-proc $1">
+        <file name="eng-bcl.autogen.bin"/>
       </program>
       <program name="lt-proc -p">
         <file name="eng-bcl.autopgen.bin"/>
@@ -85,7 +85,7 @@
         <file name="bcl-eng.t3x.bin"/>
       </program>
 
-      <program name="python3 /home/asus/new-eng-bcl/hfst-gen.py">
+      <program name="lt-proc $1">
         <file name="bcl-eng.autogen.bin"/>
       </program>
       <program name="lt-proc -p">
