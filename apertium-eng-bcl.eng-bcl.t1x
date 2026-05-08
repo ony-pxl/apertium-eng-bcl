@@ -73,6 +73,7 @@
     </def-cat>
     <def-cat n="you">
       <cat-item lemma="you" tags="prn"/>
+      <cat-item lemma="you" tags="prn.*"/>
     </def-cat>
     <def-cat n="this">
       <cat-item lemma="this" tags="prn"/>
@@ -136,6 +137,29 @@
       <cat-item lemma="that" tags="prn"/>
       <cat-item lemma="that" tags="prn.*"/>
     </def-cat>
+    <def-cat n="good">
+      <cat-item lemma="good" tags="adj"/>
+      <cat-item lemma="good" tags="adj.*"/>
+    </def-cat>
+    <def-cat n="how">
+      <cat-item lemma="how" tags="adv"/>
+      <cat-item lemma="how" tags="adv.*"/>
+    </def-cat>
+    <def-cat n="thank">
+      <cat-item lemma="thank" tags="v"/>
+      <cat-item lemma="thank" tags="v.*"/>
+    </def-cat>
+    <def-cat n="much">
+      <cat-item lemma="much" tags="adv"/>
+      <cat-item lemma="much" tags="adv.*"/>
+    </def-cat>
+    <def-cat n="many">
+      <cat-item lemma="many" tags="adv"/>
+      <cat-item lemma="many" tags="adv.*"/>
+    </def-cat>
+    <def-cat n="are">
+      <cat-item lemma="be" tags="v.pl"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -198,6 +222,104 @@
               <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: thank you -> salamat">
+      <pattern>
+        <pattern-item n="thank"/>
+        <pattern-item n="you"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="salamat"/>
+              <lit-tag v="intj"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: how much -> gurano">
+      <pattern>
+        <pattern-item n="how"/>
+        <pattern-item n="much"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="gurano"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: how many -> gurano">
+      <pattern>
+        <pattern-item n="how"/>
+        <pattern-item n="many"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="pira"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: thanks -> salamat">
+      <pattern>
+        <pattern-item n="thank"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="salamat"/>
+              <lit-tag v="intj"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: how are you -> kumusta">
+      <pattern>
+        <pattern-item n="how"/>
+        <pattern-item n="are"/>
+        <pattern-item n="you"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="kumusta"/>
+              <lit-tag v="intj"/>
+            </lu>
+            </chunk>
         </out>
       </action>
     </rule>
@@ -350,6 +472,70 @@
             </out>
         </action>
     </rule>
+
+    <rule comment="REGLA: good N -> marhay na PRN">
+        <pattern>
+            <pattern-item n="good"/>
+            <pattern-item n="n"/>
+        </pattern>
+        <action>
+            <out>
+                <chunk name="n_swap">
+                  <tags>
+                      <tag><lit-tag v="n"/></tag>
+                  </tags>
+                  <lu>
+                    <clip pos="1" side="tl" part="whole"/>
+                  </lu>
+                  </chunk>
+                  <b/>
+                  <chunk name="prn_swap">
+                  <tags>
+                      <tag><lit-tag v="prn"/></tag>
+                  </tags>
+                  <lu>
+                    <lit v="na"/>
+                  </lu>
+                   <b/>
+                  <lu>
+                    <clip pos="2" side="tl" part="whole"/>
+                  </lu>
+                  </chunk>
+            </out>
+        </action>
+    </rule>
+
+
+    <rule comment="REGLA: PRN be ADJ -> ADJ PRN">
+        <pattern>
+            <pattern-item n="prn"/>
+            <pattern-item n="be"/>
+            <pattern-item n="adj"/>
+        </pattern>
+        <action>
+            <out>
+                <chunk name="n_swap">
+                  <tags>
+                      <tag><lit-tag v="n"/></tag>
+                  </tags>
+                  <lu>
+                    <clip pos="3" side="tl" part="whole"/>
+                  </lu>
+                  <b/>
+                  </chunk>
+                  <b/>
+                  <chunk name="prn_swap">
+                  <tags>
+                      <tag><lit-tag v="prn"/></tag>
+                  </tags>
+                  <lu>
+                    <clip pos="1" side="tl" part="whole"/>
+                  </lu>
+                  </chunk>
+            </out>
+        </action>
+    </rule>
+
 
     <rule comment="REGLA: what is that -> ano an">
         <pattern>
@@ -506,7 +692,7 @@
                     <b/>
                     <lu>
                         <lit v="ko"/>
-                        <lit-tag v="prn"/>
+                        <clip pos="1" side="sl" part="a_person"/>
                     </lu>
                     </chunk>
             </out>
