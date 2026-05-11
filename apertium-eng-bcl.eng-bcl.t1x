@@ -581,6 +581,7 @@
                   <lu>
                       <lit v="taka"/>
                       <lit-tag v="prn"/>
+                      <lit-tag v="p2"/>
                   </lu>
                   </chunk>
             </out>
@@ -790,7 +791,8 @@
                         <tag><lit-tag v="v"/></tag>
                     </tags>
                     <lu>
-                        <clip pos="2" side="tl" part="whole"/>
+                        <clip pos="2" side="tl" part="lem"/>
+                        <lit-tag v="v"/>
                     </lu>
                     </chunk>
                     <b/>
@@ -801,6 +803,7 @@
                     <lu>
                       <lit v="taka"/>
                       <lit-tag v="prn"/>
+                      <lit-tag v="p2"/>
                     </lu>
                     </chunk>
             </out>
@@ -835,6 +838,7 @@
                     <lu>
                       <lit v="taka"/>
                       <lit-tag v="prn"/>
+                      <lit-tag v="p2"/>
                     </lu>
                     </chunk>
             </out>
