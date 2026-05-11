@@ -19,8 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-PROJECT_DIR = os.path.expanduser("~/ony-eng-bcl")
-FEEDBACK_FILE = os.path.expanduser("~/ony-eng-bcl/feedback.json")
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+FEEDBACK_FILE = os.path.join(PROJECT_DIR, "feedback.json")
 
 
 class FeedbackRequest(BaseModel):
@@ -49,6 +49,21 @@ def run_morph(text, direction):
     return result.stdout.strip()
 
 
+def get_pos_label(pos):
+    mapping = {
+        "v": "Verb", "vblex": "Verb", "vbser": "Verb", "vaux": "Verb",
+        "n": "Noun", "np": "Noun",
+        "prn": "Pronoun",
+        "adj": "Adjective",
+        "adv": "Adverb",
+        "pr": "Preposition",
+        "det": "Determiner",
+        "cnjcoo": "Conjunction", "cnjsub": "Conjunction",
+        "num": "Numeral",
+        "ij": "Interjection",
+    }
+    return mapping.get(pos.lower(), pos.upper())
+
 def parse_pos(morph_output):
     tokens = []
     for token in morph_output.split("$"):
@@ -58,9 +73,12 @@ def parse_pos(morph_output):
         if "/" in token:
             surface, analyses = token.split("/", 1)
             first = analyses.split("/")[0]
+            if first.startswith("*"):
+                continue
             tags = [t.strip("<>") for t in first.split("<") if t.strip("<>")]
-            pos = tags[0] if tags else "unknown"
-            tokens.append({"word": surface, "pos": pos, "tags": tags})
+            pos = tags[1] if len(tags) > 1 else (tags[0] if tags else "unknown")
+            clean_word = surface.replace("#", "").replace("^", "").strip()
+            tokens.append({"word": clean_word, "pos": get_pos_label(pos), "tags": tags})
     return tokens
 
 
@@ -101,7 +119,7 @@ def translate_with_pos(text: str, direction: str = "eng-bcl"):
         raise HTTPException(status_code=400, detail="direction must be eng-bcl or bcl-eng")
     try:
         output = run_apertium(text, direction)
-        morph = run_morph(text, direction)
+        morph = run_morph(output, "bcl-eng")
         pos_tags = parse_pos(morph)
         return {
             "input": text,
