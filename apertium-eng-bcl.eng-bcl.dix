@@ -113,6 +113,8 @@
       <e><p><l>angry<s n="adj"/></l><r>dagit<s n="adj"/></r></p></e>
       <e><p><l>answer<s n="n"/></l><r>simbag<s n="n"/></r></p></e>
       <e><p><l>bag<s n="n"/></l><r>bag<s n="n"/></r></p></e>
+      <e><p><l>bark<s n="v"/></l><r>batok<s n="v"/></r></p></e>
+      <e><p><l>baby<s n="n"/></l><r>umboy<s n="n"/></r></p></e>
       <e><p><l>be<s n="v"/></l><r><s n="v"/></r></p></e>
       <e><p><l>beautiful<s n="adj"/></l><r>magayon<s n="adj"/></r></p></e>
       <e><p><l>bed<s n="n"/></l><r>higdaan<s n="n"/></r></p></e>
@@ -120,26 +122,33 @@
       <e><p><l>bird<s n="n"/></l><r>gamgam<s n="n"/></r></p></e>
       <e><p><l>book<s n="n"/></l><r>libro<s n="n"/></r></p></e>
       <e><p><l>boy<s n="n"/></l><r>lalaki<s n="n"/></r></p></e>
+      <e><p><l>borrow<s n="v"/></l><r>subli<s n="v"/></r></p></e>
       <e><p><l>brother<s n="n"/></l><r>hermano<s n="n"/></r></p></e>
+      <e><p><l>bring<s n="v"/></l><r>dara<s n="v"/></r></p></e>
       <e><p><l>sister<s n="n"/></l><r>hermana<s n="n"/></r></p></e>
       <e><p><l>by<s n="pr"/></l><r><s n="be"/></r></p></e>
       <e><p><l>call<s n="v"/></l><r>apod<s n="v"/></r></p></e>
       <e><p><l>car<s n="n"/></l><r>kotse<s n="n"/></r></p></e>
       <e><p><l>cat<s n="n"/></l><r>ikos<s n="n"/></r></p></e>
+      <e><p><l>catch<s n="v"/></l><r>salo<s n="v"/></r></p></e>
       <e><p><l>cellphone<s n="n"/></l><r>selpon<s n="n"/></r></p></e>
       <e><p><l>chair<s n="n"/></l><r>tukawan<s n="n"/></r></p></e>
       <e><p><l>chicken<s n="n"/></l><r>manok<s n="n"/></r></p></e>
       <e><p><l>classmate<s n="n"/></l><r>kaklase<s n="n"/></r></p></e>
       <e><p><l>clear<s n="adv"/></l><r>linaw<s n="adv"/></r></p></e>
       <e><p><l>clear<s n="adj"/></l><r>linaw<s n="adj"/></r></p></e>
+      <e><p><l>come<s n="v"/></l><r><s n="v"/></r></p></e>
       <e><p><l>couch<s n="n"/></l><r>sala<s n="n"/></r></p></e>
       <e><p><l>cow<s n="n"/></l><r>baka<s n="n"/></r></p></e>
+      <e><p><l>cry<s n="v"/></l><r>hibi<s n="v"/></r></p></e>
+      <e><p><l>dance<s n="v"/></l><r>bayle<s n="v"/></r></p></e>
       <e><p><l>day<s n="n"/></l><r>aldaw<s n="n"/></r></p></e>
       <e><p><l>do<s n="v"/></l><r>gibo<s n="v"/></r></p></e>
       <e><p><l>dog<s n="n"/></l><r>ayam<s n="n"/></r></p></e>
       <e><p><l>door<s n="n"/></l><r>pinto<s n="n"/></r></p></e>
       <e><p><l>draw<s n="v"/></l><r>drowing<s n="v"/></r></p></e>
       <e><p><l>drink<s n="v"/></l><r>inom<s n="v"/></r></p></e>
+      <!--e><p><l>drink<s n="n"/></l><r>inumon<s n="n"/></r></p></e-->
       <e><p><l>duck<s n="n"/></l><r>pato<s n="n"/></r></p></e>
       <e><p><l>early<s n="adv"/></l><r>amay<s n="adv"/></r></p></e>      
       <e><p><l>eat<s n="v"/></l><r>kaon<s n="v"/></r></p></e>
@@ -148,25 +157,31 @@
       <e><p><l>exam<s n="n"/></l><r>eksam<s n="n"/></r></p></e> 
       <e><p><l>explain<s n="v"/></l><r>eksplikar<s n="v"/></r></p></e> 
       <e><p><l>fish<s n="n"/></l><r>sira<s n="n"/></r></p></e>
+      <e><p><l>find<s n="v"/></l><r>hanap<s n="v"/></r></p></e>
       <e><p><l>flower<s n="n"/></l><r>burak<s n="n"/></r></p></e>
       <e><p><l>food<s n="n"/></l><r>kakanon<s n="n"/></r></p></e>
       <e><p><l>friend<s n="n"/></l><r>barkada<s n="n"/></r></p></e>
       <e><p><l>girl<s n="n"/></l><r>babayi<s n="n"/></r></p></e>
       <e><p><l>go<s n="v"/></l><r>duman<s n="v"/></r></p></e>
       <e><p><l>he<s n="prn"/></l><r>siya<s n="prn"/></r></p></e>
+      <e><p><l>here<s n="adv"/></l><r>digdi<s n="adv"/></r></p></e>
       <e><p><l>have<s n="v"/></l><r>igwa<s n="v"/></r></p></e>
       <e><p><l>home<s n="n"/></l><r>harong<s n="n"/></r></p></e>
       <e><p><l>horse<s n="n"/></l><r>kabayo<s n="n"/></r></p></e>
       <e><p><l>house<s n="n"/></l><r>harong<s n="n"/></r></p></e>
       <e><p><l>I<s n="prn"/></l><r>ako<s n="prn"/></r></p></e>
-      <e><p><l>I<s n="prn"/><s n="gen"/><s n="p1"/></l><r>sakuya<s n="prn"/></r></p></e>    
-      <e><p><l>kitten<s n="v"/></l><r>kuting<s n="n"/></r></p></e>
+      <e><p><l>I<s n="prn"/><s n="gen"/><s n="p1"/></l><r>sakuya<s n="prn"/><s n="p1"/></r></p></e>
+      <e><p><l>invite<s n="v"/></l><r>imbitar<s n="v"/></r></p></e>
+      <e><p><l>key<s n="n"/></l><r>lyabe<s n="n"/></r></p></e>
+      <e><p><l>kitten<s n="n"/></l><r>kuting<s n="n"/></r></p></e>
       <e><p><l>know<s n="v"/></l><r>aram<s n="v"/></r></p></e>
       <e><p><l>land<s n="n"/></l><r>daga<s n="n"/></r></p></e>
       <e><p><l>later<s n="adv"/></l><r>atyan<s n="adv"/></r></p></e>
+      <e><p><l>laugh<s n="v"/></l><r>ngisi<s n="v"/></r></p></e>
       <e><p><l>like<s n="v"/></l><r>gusto<s n="v"/></r></p></e>
       <e><p><l>listen<s n="v"/></l><r>dangog<s n="v"/></r></p></e>
       <e><p><l>letter<s n="n"/></l><r>surat<s n="n"/></r></p></e>
+      <e><p><l>leave<s n="v"/></l><r>hali<s n="v"/></r></p></e>
       <e><p><l>love<s n="v"/></l><r>padaba<s n="v"/></r></p></e>
       <e><p><l>man<s n="n"/></l><r>tawo<s n="n"/></r></p></e>
       <e><p><l>moon<s n="n"/></l><r>bulan<s n="n"/></r></p></e>
@@ -178,11 +193,13 @@
       <e><p><l>night<s n="n"/></l><r>banggi<s n="n"/></r></p></e>
       <e><p><l>no<s n="adv"/></l><r>dai<s n="adv"/></r></p></e>
       <e><p><l>not<s n="adv"/></l><r>bako<s n="adv"/></r></p></e>
+      <e><p><l>notebook<s n="n"/></l><r>notebook<s n="n"/></r></p></e>
       <e><p><l>now<s n="adv"/></l><r>ngunyan<s n="adv"/></r></p></e>
       <e><p><l>ocean<s n="n"/></l><r>dagat<s n="n"/></r></p></e>
       <e><p><l>on<s n="pr"/></l><r><s n="pr"/></r></p></e>
       <e><p><l>park<s n="n"/></l><r>park<s n="n"/></r></p></e>
       <e><p><l>pen<s n="n"/></l><r>bolpen<s n="n"/></r></p></e>
+      <e><p><l>pencil<s n="n"/></l><r>lapis<s n="n"/></r></p></e>
       <e><p><l>phone<s n="n"/></l><r>selpon<s n="n"/></r></p></e>
       <e><p><l>pig<s n="n"/></l><r>orig<s n="n"/></r></p></e>
       <e><p><l>question<s n="n"/></l><r>hapot<s n="n"/></r></p></e>
@@ -192,24 +209,32 @@
       <e><p><l>river<s n="n"/></l><r>salog<s n="n"/></r></p></e>
       <e><p><l>rock<s n="n"/></l><r>gapo<s n="n"/></r></p></e>
       <e><p><l>run<s n="v"/></l><r>dalagan<s n="v"/></r></p></e>
+      <e><p><l>sandwich<s n="n"/></l><r>sandwich<s n="n"/></r></p></e>
       <e><p><l>school<s n="n"/></l><r>eskwelahan<s n="n"/></r></p></e>
       <e><p><l>sea<s n="n"/></l><r>dagat<s n="n"/></r></p></e>
       <e><p><l>seat<s n="n"/></l><r>tukawan<s n="n"/></r></p></e>
+      <e><p><l>see<s n="v"/></l><r>hiling<s n="v"/></r></p></e>
       <e><p><l>she<s n="prn"/></l><r>siya<s n="prn"/></r></p></e>
       <e><p><l>sing<s n="v"/></l><r>kanta<s n="v"/></r></p></e>
       <e><p><l>sit<s n="v"/></l><r>tukaw<s n="v"/></r></p></e>
       <e><p><l>sky<s n="n"/></l><r>langit<s n="n"/></r></p></e>
       <e><p><l>sleep<s n="v"/></l><r>katurog<s n="v"/></r></p></e>
+      <e><p><l>smile<s n="v"/></l><r>ngirit<s n="v"/></r></p></e>
+      <e><p><l>speak<s n="v"/></l><r>taram<s n="v"/></r></p></e>
       <e><p><l>sing<s n="v"/></l><r>kanta<s n="v"/></r></p></e>
       <e><p><l>song<s n="n"/></l><r>kanta<s n="n"/></r></p></e>
+      <e><p><l>sound<s n="n"/></l><r>tunog<s n="n"/></r></p></e>
       <e><p><l>star<s n="n"/></l><r>bituon<s n="n"/></r></p></e>
       <e><p><l>student<s n="n"/></l><r>estudyante<s n="n"/></r></p></e>
       <e><p><l>study<s n="v"/></l><r>adal<s n="v"/></r></p></e>
       <e><p><l>sun<s n="n"/></l><r>aldaw<s n="n"/></r></p></e>
+      <e><p><l>supervisor<s n="n"/></l><r>supervisor<s n="n"/></r></p></e>
       <e><p><l>table<s n="n"/></l><r>lamesa<s n="n"/></r></p></e>
+      <e><p><l>take<s n="v"/></l><r>kua<s n="v"/></r></p></e>
       <e><p><l>talk<s n="v"/></l><r>taram<s n="v"/></r></p></e>
       <e><p><l>teacher<s n="n"/></l><r>maestro<s n="n"/></r></p></e>
       <e><p><l>teacher<s n="n"/></l><r>maestra<s n="n"/></r></p></e>
+      <e><p><l>text<s n="v"/></l><r>teks<s n="v"/></r></p></e>
       <e><p><l>that<s n="prn"/></l><r>iyan<s n="prn"/></r></p></e>
       <e><p><l>thank<s n="v"/></l><r><s n="v"/></r></p></e>
       <e><p><l>they<s n="prn"/></l><r>sinda<s n="prn"/></r></p></e>
@@ -218,19 +243,19 @@
       <e><p><l>to<s n="pr"/></l><r>pasiring<s n="pr"/></r></p></e>
       <e><p><l>tree<s n="n"/></l><r>kahoy<s n="n"/></r></p></e>
       <e><p><l>understand<s n="v"/></l><r>sabot<s n="v"/></r></p></e>
+      <e><p><l>visit<s n="v"/></l><r>bisita<s n="v"/></r></p></e>
       <e><p><l>walk<s n="v"/></l><r>lakaw<s n="v"/></r></p></e>
       <e><p><l>water<s n="n"/></l><r>tubig<s n="n"/></r></p></e>
       <e><p><l>what<s n="prn"/></l><r>ano<s n="prn"/></r></p></e>
       <e><p><l>watch<s n="v"/></l><r>hiling<s n="v"/></r></p></e>
       <e><p><l>will<s n="will"/></l><r><s n="will"/></r></p></e>
       <e><p><l>window<s n="n"/></l><r>bintana<s n="n"/></r></p></e>
-      <e><p><l>window<s n="n"/></l><r>duros<s n="n"/></r></p></e>
       <e><p><l>woman<s n="n"/></l><r>babayi<s n="n"/></r></p></e>
       <e><p><l>wood<s n="n"/></l><r>kahoy<s n="n"/></r></p></e>      
       <e><p><l>write<s n="v"/></l><r>surat<s n="v"/></r></p></e>
       <e><p><l>yes<s n="adv"/></l><r>iyo<s n="adv"/></r></p></e>
       <e><p><l>you<s n="prn"/></l><r>ika<s n="prn"/></r></p></e>
-      <e><p><l>you<s n="prn"/><s n="gen"/><s n="p2"/></l><r>saimo<s n="prn"/></r></p></e>
+      <e><p><l>you<s n="prn"/><s n="gen"/><s n="p2"/></l><r>saimo<s n="prn"/><s n="p2"/></r></p></e>
 
       <e><p><l>one<s n="num"/></l><r>saro<s n="num"/></r></p></e>
       <e><p><l>two<s n="num"/></l><r>duwa<s n="num"/></r></p></e>
@@ -243,11 +268,19 @@
       <e><p><l>nine<s n="num"/></l><r>siyam<s n="num"/></r></p></e>
       <e><p><l>ten<s n="num"/></l><r>sampulo<s n="num"/></r></p></e>
 
+      <e><p><l>John<s n="np"/></l><r>John<s n="np"/></r></p></e>
+      <e><p><l>Michael<s n="np"/></l><r>Michael<s n="np"/></r></p></e>
+      <e><p><l>Jose<s n="np"/></l><r>Jose<s n="np"/></r></p></e>
+      <e><p><l>Maria<s n="np"/></l><r>Maria<s n="np"/></r></p></e>
+      <e><p><l>Anna<s n="np"/></l><r>Anna<s n="np"/></r></p></e>
+      <e><p><l>Emily<s n="np"/></l><r>Emily<s n="np"/></r></p></e>
+      <e><p><l>David<s n="np"/></l><r>David<s n="np"/></r></p></e>
+      <e><p><l>Jessica<s n="np"/></l><r>Jessica<s n="np"/></r></p></e>
+
       <e><re>[.\?;:!…¿¶]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
       <e><re>,</re>          <p><l><s n="cm"/></l>  <r><s n="cm"/></r></p></e>
    
       <!-- ═══ IMPORTED FROM sample1.csv (fixed tags) ═══ -->
-      <e><p><l>see<s n="v"/></l><r>hiling<s n="v"/></r></p></e>
       <e><p><l>hear<s n="v"/></l><r>dangog<s n="v"/></r></p></e>
       <e><p><l>read<s n="v"/></l><r>basa<s n="v"/></r></p></e>
       <e><p><l>bird<s n="n"/></l><r>gamgam<s n="n"/></r></p></e>
@@ -268,7 +301,6 @@
       <e><p><l>beautiful<s n="n"/></l><r>magayon<s n="n"/></r></p></e>
       <e><p><l>beautiful<s n="adj"/></l><r>magayon<s n="adj"/></r></p></e>
       <e><p><l>far<s n="n"/></l><r>harayo<s n="n"/></r></p></e>
-      <e><p><l>here<s n="pr"/></l><r>digdi<s n="pr"/></r></p></e>
       <e><p><l>there<s n="pr"/></l><r>duman<s n="pr"/></r></p></e>
       <e><p><l>hello<s n="n"/></l><r>kumusta<s n="n"/></r></p></e>
       <e><p><l>who<s n="prn"/></l><r>siisay<s n="prn"/></r></p></e>
@@ -288,7 +320,7 @@
       <e><p><l>mouth<s n="n"/></l><r>nguso<s n="n"/></r></p></e>
       <e><p><l>tooth<s n="n"/></l><r>ngipon<s n="n"/></r></p></e>
       <e><p><l>hand<s n="n"/></l><r>kamot<s n="n"/></r></p></e>
-      <e><p><l>left<s n="pr"/></l><r>wala<s n="pr"/></r></p></e>
+      <!--e><p><l>left<s n="pr"/></l><r>wala<s n="pr"/></r></p></e-->
       <e><p><l>right<s n="pr"/></l><r>too<s n="pr"/></r></p></e>
       <e><p><l>inside<s n="pr"/></l><r>laog<s n="pr"/></r></p></e>
       <e><p><l>outside<s n="pr"/></l><r>luwas<s n="pr"/></r></p></e>
@@ -461,7 +493,7 @@
       <e><p><l>butterfly<s n="n"/></l><r>kakanog<s n="n"/></r></p></e>
       <e><p><l>bee<s n="n"/></l><r>putyokan<s n="n"/></r></p></e>
       <e><p><l>spider<s n="n"/></l><r>lawa<s n="n"/></r></p></e>
-      <e><p><l>fly<s n="v"/></l><r>langaw<s n="v"/></r></p></e>
+      <e><p><l>fly<s n="v"/></l><r>layog<s n="v"/></r></p></e>
       <e><p><l>mosquito<s n="n"/></l><r>lamok<s n="n"/></r></p></e>
       <e><p><l>worm<s n="n"/></l><r>ulod<s n="n"/></r></p></e>
       <e><p><l>bush<s n="n"/></l><r>tananom<s n="n"/></r></p></e>
@@ -522,7 +554,6 @@
       <e><p><l>coach<s n="n"/></l><r>coach<s n="n"/></r></p></e>
       <e><p><l>fan<s n="n"/></l><r>tagasuporta<s n="n"/></r></p></e>
       <e><p><l>music<s n="n"/></l><r>musika<s n="n"/></r></p></e>
-      <e><p><l>dance<s n="v"/></l><r>bayle<s n="v"/></r></p></e>
       <e><p><l>art<s n="n"/></l><r>arte<s n="n"/></r></p></e>
       <e><p><l>paint<s n="n"/></l><r>pintura<s n="n"/></r></p></e>
       <e><p><l>photo<s n="n"/></l><r>litrato<s n="n"/></r></p></e>
@@ -625,9 +656,7 @@
       <e><p><l>stay<s n="v"/></l><r>tiner<s n="v"/></r></p></e>
       <e><p><l>move<s n="v"/></l><r>hiro<s n="v"/></r></p></e>
       <e><p><l>travel<s n="v"/></l><r>byahe<s n="v"/></r></p></e>
-      <e><p><l>visit<s n="v"/></l><r>bisita<s n="v"/></r></p></e>
       <e><p><l>meet<s n="v"/></l><r>tagbo<s n="v"/></r></p></e>
-      <e><p><l>leave<s n="v"/></l><r>hali<s n="v"/></r></p></e>
       <e><p><l>arrive<s n="v"/></l><r>abot<s n="v"/></r></p></e>
       <e><p><l>return<s n="v"/></l><r>balik<s n="v"/></r></p></e>
       <e><p><l>wait<s n="v"/></l><r>halat<s n="v"/></r></p></e>
@@ -860,7 +889,6 @@
       <e><p><l>cart<s n="n"/></l><r>kariton<s n="n"/></r></p></e>
       <e><p><l>castle<s n="n"/></l><r>kastilyo<s n="n"/></r></p></e>
       <e><p><l>casualty<s n="n"/></l><r>biktima<s n="n"/></r></p></e>
-      <e><p><l>catch<s n="v"/></l><r>salo<s n="v"/></r></p></e>
       <e><p><l>category<s n="n"/></l><r>kategorya<s n="n"/></r></p></e>
       <e><p><l>celebration<s n="n"/></l><r>selebrasyon<s n="n"/></r></p></e>
       <e><p><l>cemetery<s n="n"/></l><r>sementeryo<s n="n"/></r></p></e>
@@ -1233,7 +1261,6 @@
       <e><p><l>labor<s n="n"/></l><r>trabaho<s n="n"/></r></p></e>
       <e><p><l>laboratory<s n="n"/></l><r>laboratoryo<s n="n"/></r></p></e>
       <e><p><l>landscape<s n="n"/></l><r>tanawon<s n="n"/></r></p></e>
-      <e><p><l>laughter<s n="n"/></l><r>ngisi<s n="n"/></r></p></e>
       <e><p><l>lawyer<s n="n"/></l><r>abogado<s n="n"/></r></p></e>
       <e><p><l>leadership<s n="n"/></l><r>liderato<s n="n"/></r></p></e>
       <e><p><l>league<s n="n"/></l><r>liga<s n="n"/></r></p></e>

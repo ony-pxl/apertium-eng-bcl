@@ -8,6 +8,10 @@
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
     </def-cat>
+    <def-cat n="np">
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+    </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
@@ -159,6 +163,23 @@
     </def-cat>
     <def-cat n="are">
       <cat-item lemma="be" tags="v.pl"/>
+    </def-cat>
+    <def-cat n="went">
+      <cat-item lemma="go" tags="v.past"/>
+    </def-cat>
+    <def-cat n="a">
+      <cat-item lemma="a" tags="det.ind"/>
+    </def-cat>
+    <def-cat n="the">
+      <cat-item lemma="a" tags="det.def"/>
+    </def-cat>
+    <def-cat n="here">
+      <cat-item lemma="here" tags="adv"/>
+      <cat-item lemma="here" tags="adv.*"/>
+    </def-cat>
+    <def-cat n="come">
+      <cat-item lemma="come" tags="v"/>
+      <cat-item lemma="come" tags="v.*"/>
     </def-cat>
   </section-def-cats>
 
@@ -318,6 +339,75 @@
             <lu>
               <lit v="kumusta"/>
               <lit-tag v="intj"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: do PRN V -> V PRN">
+      <pattern>
+        <pattern-item n="do"/>
+        <pattern-item n="prn"/>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <lit-tag v="v"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+            </lu>
+            </chunk>
+          <b/>
+          <chunk name="prn_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="ko"/>
+              <clip pos="2" side="sl" part="a_person"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: do DET N V come here -> V PRN">
+      <pattern>
+        <pattern-item n="do"/>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+        <pattern-item n="come"/>
+        <pattern-item n="here"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <lit v="digdi"/>
+              <lit-tag v="v"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+            </lu>
+            </chunk>
+          <b/>
+          <chunk name="n_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="su"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
             </lu>
             </chunk>
         </out>
@@ -841,7 +931,7 @@
         </action>
     </rule>
 
-    <rule comment="REGLA: PRN go home -> ADV V PRN">
+    <rule comment="REGLA: PRN go home -> V PRN">
         <pattern>
             <pattern-item n="prn"/>
             <pattern-item n="go"/>
@@ -910,6 +1000,41 @@
                     </tags>
                     <lu>
                       <clip pos="4" side="tl" part="whole"/>
+                    </lu>
+              </chunk>
+            </out>
+        </action>
+    </rule>
+
+    <rule comment="REGLA: NP go home -> V si NP">
+        <pattern>
+            <pattern-item n="np"/>
+            <pattern-item n="go"/>
+            <pattern-item n="home"/>
+        </pattern>
+        <action>
+            <out>
+              <chunk name="v_swap">
+                  <tags>
+                      <tag><lit-tag v="v"/></tag>
+                  </tags>
+                  <lu>
+                      <lit v="uli"/>
+                      <clip pos="2" side="sl" part="a_v"/>
+                      <clip pos="2" side="sl" part="a_tense"/>
+                  </lu>
+              </chunk>
+              <b/>
+              <chunk name="np_swap">
+                    <tags>
+                      <tag><lit-tag v="prn"/></tag>
+                    </tags>
+                    <lu>
+                      <lit v="si"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="1" side="tl" part="whole"/>
                     </lu>
               </chunk>
             </out>
@@ -1000,7 +1125,8 @@
             </lu>
             <b/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+              <lit v="ako"/>
+              <clip pos="1" side="sl" part="a_person"/>
             </lu>
           </chunk>
         </out>
@@ -1444,9 +1570,80 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N V -> V an N">
+    <rule comment="REGLA: DET N_PL V -> V an mga N">
       <pattern>
         <pattern-item n="det"/>
+        <pattern-item n="pl"/>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b/>
+            <chunk name="subj">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <lit v="an"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="mga"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <lit-tag v="n"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: the N V -> V su N">
+      <pattern>
+        <pattern-item n="the"/>
+        <pattern-item n="n"/>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b/>
+            <chunk name="subj">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <lit v="su"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: a N V -> V an N">
+      <pattern>
+        <pattern-item n="a"/>
         <pattern-item n="n"/>
         <pattern-item n="v"/>
       </pattern>
@@ -1476,6 +1673,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: DET N V DET N -> V an N">
       <pattern>
@@ -1566,6 +1764,75 @@
             <b/>
             <lu>
               <clip pos="4" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: N V_PL -> V an mga N">
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b/>
+            <chunk name="n_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="an"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="mga"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="n"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: N V -> V an N">
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="v"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b/>
+            <chunk name="n_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="an"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
@@ -1847,9 +2114,9 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N -> an N">
+    <rule comment="REGLA: a N -> an N">
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="a"/>
         <pattern-item n="n"/>
       </pattern>
       <action>
@@ -1860,6 +2127,29 @@
             </tags>
             <lu>
               <lit v="an"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: the N -> su N">
+      <pattern>
+        <pattern-item n="the"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="an_n_form">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <lit v="su"/>
             </lu>
             <b/>
             <lu>
@@ -1979,6 +2269,29 @@
         </out>
       </action>
     </rule>
+
+        <rule comment="REGLA: NP -> si NP">
+      <pattern>
+        <pattern-item n="np"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="pr"/></tag>
+            </tags>
+            <lu>
+              <lit v="si"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
   </section-rules>
 </transfer>
 
