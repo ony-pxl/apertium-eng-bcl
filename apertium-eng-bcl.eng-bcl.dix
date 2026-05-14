@@ -152,6 +152,7 @@
       <e><p><l>duck<s n="n"/></l><r>pato<s n="n"/></r></p></e>
       <e><p><l>early<s n="adv"/></l><r>amay<s n="adv"/></r></p></e>      
       <e><p><l>eat<s n="v"/></l><r>kaon<s n="v"/></r></p></e>
+      <e><p><l>engineer<s n="n"/></l><r>engineer<s n="n"/></r></p></e>
       <e><p><l>enter<s n="v"/></l><r>laog<s n="adv"/></r></p></e> 
       <e><p><l>every<s n="adv"/></l><r><s n="adv"/></r></p></e>    
       <e><p><l>exam<s n="n"/></l><r>eksam<s n="n"/></r></p></e> 
@@ -184,6 +185,7 @@
       <e><p><l>leave<s n="v"/></l><r>hali<s n="v"/></r></p></e>
       <e><p><l>love<s n="v"/></l><r>padaba<s n="v"/></r></p></e>
       <e><p><l>man<s n="n"/></l><r>tawo<s n="n"/></r></p></e>
+      <e><p><l>manager<s n="n"/></l><r>manager<s n="n"/></r></p></e>
       <e><p><l>moon<s n="n"/></l><r>bulan<s n="n"/></r></p></e>
       <e><p><l>morning<s n="n"/></l><r>aga<s n="n"/></r></p></e>
       <e><p><l>mountain<s n="n"/></l><r>bulod<s n="n"/></r></p></e>
@@ -202,6 +204,9 @@
       <e><p><l>pencil<s n="n"/></l><r>lapis<s n="n"/></r></p></e>
       <e><p><l>phone<s n="n"/></l><r>selpon<s n="n"/></r></p></e>
       <e><p><l>pig<s n="n"/></l><r>orig<s n="n"/></r></p></e>
+      <e><p><l>police<s n="n"/></l><r>pulis<s n="n"/></r></p></e>
+      <e><p><l>police<s n="n"/></l><r>pulis<s n="n"/></r></p></e>
+      <e><p><l>principal<s n="n"/></l><r>principal<s n="n"/></r></p></e>
       <e><p><l>question<s n="n"/></l><r>hapot<s n="n"/></r></p></e>
       <e><p><l>rain<s n="n"/></l><r>uran<s n="n"/></r></p></e>
       <e><p><l>read<s n="v"/></l><r>basa<s n="v"/></r></p></e>
@@ -244,6 +249,7 @@
       <e><p><l>tree<s n="n"/></l><r>kahoy<s n="n"/></r></p></e>
       <e><p><l>understand<s n="v"/></l><r>sabot<s n="v"/></r></p></e>
       <e><p><l>visit<s n="v"/></l><r>bisita<s n="v"/></r></p></e>
+      <e><p><l>visitor<s n="n"/></l><r>bisita<s n="n"/></r></p></e>
       <e><p><l>walk<s n="v"/></l><r>lakaw<s n="v"/></r></p></e>
       <e><p><l>water<s n="n"/></l><r>tubig<s n="n"/></r></p></e>
       <e><p><l>what<s n="prn"/></l><r>ano<s n="prn"/></r></p></e>

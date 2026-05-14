@@ -119,6 +119,14 @@
       <cat-item lemma="home" tags="n"/>
       <cat-item lemma="home" tags="n.*"/>
     </def-cat>
+    <def-cat n="police">
+      <cat-item lemma="police" tags="n"/>
+      <cat-item lemma="police" tags="n.*"/>
+    </def-cat>
+    <def-cat n="officer">
+      <cat-item lemma="officer" tags="n"/>
+      <cat-item lemma="officer" tags="n.*"/>
+    </def-cat>
     <def-cat n="explained">
       <cat-item lemma="explain" tags="v.past"/>
     </def-cat>
@@ -243,6 +251,25 @@
               <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: police officer -> pulis">
+      <pattern>
+        <pattern-item n="police"/>
+        <pattern-item n="officer"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="before_trns">
+            <tags>
+              <tag><lit-tag v="n"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            </chunk>
         </out>
       </action>
     </rule>
@@ -377,7 +404,92 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: do DET N V come here -> V PRN">
+    <rule comment="REGLA: do DET N_PL come here -> V PRN">
+      <pattern>
+        <pattern-item n="do"/>
+        <pattern-item n="det"/>
+        <pattern-item n="pl"/>
+        <pattern-item n="come"/>
+        <pattern-item n="here"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <lit v="digdi"/>
+              <lit-tag v="v"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+            </lu>
+            </chunk>
+          <b/>
+          <chunk name="n_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="su"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="mga"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <lit-tag v="n"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: do PRN N come here -> V PRN">
+      <pattern>
+        <pattern-item n="do"/>
+        <pattern-item n="prn"/>
+        <pattern-item n="n"/>
+        <pattern-item n="come"/>
+        <pattern-item n="here"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <lit v="digdi"/>
+              <lit-tag v="v"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+            </lu>
+            </chunk>
+          <b/>
+          <chunk name="n_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="su"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <lit-tag v="n"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="ko"/>
+              <clip pos="2" side="sl" part="a_person"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: do DET N come here -> V PRN">
       <pattern>
         <pattern-item n="do"/>
         <pattern-item n="det"/>
@@ -408,6 +520,42 @@
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: do NP come here -> V PRN">
+      <pattern>
+        <pattern-item n="do"/>
+        <pattern-item n="np"/>
+        <pattern-item n="come"/>
+        <pattern-item n="here"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="v_swap">
+            <tags>
+              <tag><lit-tag v="v"/></tag>
+            </tags>
+            <lu>
+              <lit v="digdi"/>
+              <lit-tag v="v"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+            </lu>
+            </chunk>
+          <b/>
+          <chunk name="n_swap">
+            <tags>
+              <tag><lit-tag v="prn"/></tag>
+            </tags>
+            <lu>
+              <lit v="si"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
             </lu>
             </chunk>
         </out>
@@ -671,7 +819,6 @@
                   <lu>
                       <lit v="taka"/>
                       <lit-tag v="prn"/>
-                      <lit-tag v="p2"/>
                   </lu>
                   </chunk>
             </out>
@@ -881,8 +1028,7 @@
                         <tag><lit-tag v="v"/></tag>
                     </tags>
                     <lu>
-                        <clip pos="2" side="tl" part="lem"/>
-                        <lit-tag v="v"/>
+                        <clip pos="2" side="tl" part="whole"/>
                     </lu>
                     </chunk>
                     <b/>
@@ -893,7 +1039,6 @@
                     <lu>
                       <lit v="taka"/>
                       <lit-tag v="prn"/>
-                      <lit-tag v="p2"/>
                     </lu>
                     </chunk>
             </out>
@@ -1774,9 +1919,9 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N V_PL -> V an mga N">
+    <rule comment="REGLA: N_PL V -> V an mga N">
       <pattern>
-        <pattern-item n="n"/>
+        <pattern-item n="pl"/>
         <pattern-item n="v"/>
       </pattern>
       <action>
